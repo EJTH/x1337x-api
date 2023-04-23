@@ -30,20 +30,20 @@ x1337.api().search('search terms').then(results => {
 Which should give you something like:
 ```JSON
 {
-  name: "Nineteen Eighty-Four (1984) (Orwell) Richard Burton, John Hurt 10...",
-  seeds: 3636,
-  leeches: 15,
-  size: "15",
-  uploader: "michaelrizzo",
-  pageUrl: "...",
-  description: "",
-  hash: "1EAB3FFD241FF6BFD6ED579D0466FA6545DF7D33",
-  magnet: "magnet:...",
-  torrentLinks: {
-    itorrents: "http://...",
-    torrage: "http://...",
-    btcache: "http://...",
-    magnet: "magnet:?xt=urn:...."
+  "name": "Nineteen Eighty-Four (1984) (Orwell) Richard Burton, John Hurt 10...",
+  "seeds": 3636,
+  "leeches": 15,
+  "size": "15",
+  "uploader": "michaelrizzo",
+  "pageUrl": "...",
+  "description": "",
+  "hash": "1EAB3FFD241FF6BFD6ED579D0466FA6545DF7D33",
+  "magnet": "magnet:...",
+  "torrentLinks": {
+    "itorrents": "http://...",
+    "torrage": "http://...",
+    "btcache": "http://...",
+    "magnet": "magnet:?xt=urn:...."
   }
 }
 ```
