@@ -76,7 +76,7 @@ x1337.api().popular('movies').then(movies => console.log(movies))
 ```
 
 ## Download helpers for torrent clients.
-I have included a helper for starting downloads using rutorrent:
+I have included a helper for starting downloads using rutorrent. I am planning on adding more if there is any interrest. Create a ticket with your favorite client and I will take a look at it. For the included helper, see `dl/config.js` for configuration.
 
 ```bash
 npm run dl-rutorrent "search term" "label"
