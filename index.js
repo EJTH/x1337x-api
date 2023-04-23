@@ -1,4 +1,5 @@
 const cheerio = require('cheerio');
+const { contents } = require('cheerio/lib/api/traversing');
 const https = require('https');
 
 /**
@@ -65,7 +66,7 @@ function api(mirrorUrl) {
             name: cleanText($item.find('.name').text()),
             seeds: parseInt(cleanText($item.find('.seeds').text())),
             leeches: parseInt(cleanText($item.find('.leeches').text())),
-            size: cleanText($item.find('.leeches').text()),
+            size: cleanText($item.find('.size').text()),
             uploader: cleanText($item.find('.uploader').text()),
             pageUrl: pageUrl
           };
