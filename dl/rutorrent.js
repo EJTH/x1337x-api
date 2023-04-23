@@ -1,4 +1,4 @@
-const x1337x = require('../index.js');
+const x1337x = require('../x1337x.js');
 const https = require('https');
 
 const config = require('./config.js');
