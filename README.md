@@ -31,3 +31,8 @@ x1337.api().search('search terms').then(results => {
 let mirror = x1337.mirrors[2];
 x1337.api(mirror).search(...);
 ```
+
+I have included a helper for starting downloads using rutorrent:
+```
+npm run dl-rutorrent "search term" "label"
+```
