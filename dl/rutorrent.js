@@ -38,17 +38,17 @@ let label = process.argv[3] || '';
 if(!search){
   console.log("Download first result from 1337x. Usage: npm run dl-rutorrent 'Search Term' 'label'.")
   console.log("Configure ruTorrent credentials in config.js");
-}
-
-x1337x.api().search(search).then(results => {
-  results[0].info().then(info=>{
-    console.log(`Found matching torrent: "${info.name}"`);
-    addTorrent(info.magnet, label).then(result => {
-      if(result){
-        console.log('Succesfully added torrent to rutorrent queue...');
-      } else {
-        console.log('Error adding torrent to rutorrent.');
-      }
+} else {
+  x1337x.api().search(search).then(results => {
+    results[0].info().then(info=>{
+      console.log(`Found matching torrent: "${info.name}"`);
+      addTorrent(info.magnet, label).then(result => {
+        if(result){
+          console.log('Succesfully added torrent to rutorrent queue...');
+        } else {
+          console.log('Error adding torrent to rutorrent.');
+        }
+      });
     });
   });
-})
+}
