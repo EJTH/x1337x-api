@@ -1,8 +1,11 @@
 {
   "name": "x1337xapi",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Webscraper API for 1337x",
   "main": "x1337x.js",
+  "bin": {
+    "x1337-dl": "./dl/rutorrent.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dl-rutorrent" : "node ./dl/rutorrent.js",

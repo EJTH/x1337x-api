@@ -81,3 +81,7 @@ I have included a helper for starting downloads using rutorrent. I am planning o
 ```bash
 npm run dl-rutorrent "search term" "label"
 ```
+
+If you install the package globally with `npm i x1337xapi --global` you can run the dl helper like this:
+```bash
+x1337-dl "search terms" "label"
