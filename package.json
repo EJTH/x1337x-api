@@ -1,15 +1,17 @@
 {
   "name": "x1337xapi",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Webscraper API for 1337x",
   "main": "x1337x.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EJTH/x1337x-api"
+  },
   "bin": {
-    "x1337-dl": "./dl/rutorrent.js"
+    "x1337-dl": "./dl/dl.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dl-rutorrent" : "node ./dl/rutorrent.js",
-    "dl" : "node ./dl/rutorrent.js"
+    "dl" : "node ./dl/dl.js"
   },
   "author": "",
   "license": "ISC",
