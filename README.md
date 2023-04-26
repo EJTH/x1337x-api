@@ -76,12 +76,20 @@ x1337.api().popular('movies').then(movies => console.log(movies))
 ```
 
 ## Download helpers for torrent clients.
-I have included a helper for starting downloads using rutorrent. I am planning on adding more if there is any interrest. Create a ticket with your favorite client and I will take a look at it. For the included helper, see `dl/config.js` for configuration.
+I have included a node helper for starting downloads using rutorrent and one for running a custom download command. Create a ticket with your favorite client and I will take a look at it. For the included helpers, see `dl/config.js`.
+Command templates included for: `
+
+- qBitTorrent
+- Transmission
+- uTorrent
+- deluge
+- vuze
 
 ```bash
-npm run dl-rutorrent "search term" "label"
+npm run dl "search term" "label"
 ```
 
 If you install the package globally with `npm i x1337xapi --global` you can run the dl helper like this:
 ```bash
 x1337-dl "search terms" "label"
+```
