@@ -1,6 +1,13 @@
 const https = require('https');
 
-const config = require('./config.js').rutorrent;
+let config;
+try {
+  config = require('./config.js');
+} catch (ex){
+  config = require('./example.config.js');
+}
+
+config = config.rutorrent;
 
 function addTorrent(magnet, label) {
   return new Promise(resolve => {

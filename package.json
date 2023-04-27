@@ -1,6 +1,6 @@
 {
   "name": "x1337xapi",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Webscraper API for 1337x",
   "main": "x1337x.js",
   "keywords": [

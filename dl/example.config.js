@@ -1,5 +1,6 @@
 module.exports = {
   // Helper to use when executing x1337-dl.
+  // custom or rutorrent.
   helper: 'custom',
 
   // Mirror to use when using x1337-dl.

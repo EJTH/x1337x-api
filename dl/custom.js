@@ -1,4 +1,10 @@
-const config = require('./config.js');
+let config;
+try {
+  config = require('./config.js');
+} catch (ex){
+  config = require('./example.config.js');
+}
+
 const { exec } = require('child_process');
 
 function addTorrent(magnet, label) {

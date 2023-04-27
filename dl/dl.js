@@ -1,6 +1,11 @@
 #!/usr/bin/env node
 const x1337x = require('../x1337x.js');
-const config = require('./config.js');
+let config;
+try {
+  config = require('./config.js');
+} catch (ex){
+  config = require('./example.config.js');
+}
 
 const addTorrent = require(`./${config.helper}.js`);
  
